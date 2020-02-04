@@ -45,7 +45,7 @@ class Form extends Component {
               label='Remebmer Me'
             />
             <Button
-              varaint='contained'
+              variant='contained'
               type='submit'
               fullWidth
               color='primary'
