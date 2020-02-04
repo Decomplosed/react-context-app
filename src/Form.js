@@ -17,6 +17,8 @@ import styles from './styles/FormStyles'
 
 class Form extends Component {
   render() {
+    const { classes } = this.props
+
     return <main className={classes.main}></main>
   }
 }
