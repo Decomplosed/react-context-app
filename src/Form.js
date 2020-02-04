@@ -21,4 +21,4 @@ class Form extends Component {
   }
 }
 
-export default Form
+export default withStyles(styles)(Form)
