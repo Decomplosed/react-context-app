@@ -21,7 +21,9 @@ class Form extends Component {
 
     return (
       <main className={classes.main}>
-        <h1>FORM!!!!</h1>
+        <Paper className={classes.paper}>
+          <h1>FORM!@</h1>
+        </Paper>
       </main>
     )
   }
