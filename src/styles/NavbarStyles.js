@@ -1,16 +1,15 @@
 import { fade } from '@material-ui/core/styles/colorManipulator'
-
 const styles = theme => ({
   root: {
     width: '100%',
-    marginBottom: '0'
+    marginBottom: 0
   },
-  grom: {
-    flexGrow: '1'
+  grow: {
+    flexGrow: 1
   },
   menuButton: {
-    marginLeft: '-12',
-    marginRight: '20'
+    marginLeft: -12,
+    marginRight: 20
   },
   title: {
     display: 'none',
@@ -25,11 +24,10 @@ const styles = theme => ({
     '&:hover': {
       backgroundColor: fade(theme.palette.common.white, 0.25)
     },
-    marginLeft: 'auto',
-    marginRight: '0',
+    marginLeft: 0,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      marginLeft: 'auto',
+      marginLeft: theme.spacing.unit,
       width: 'auto'
     }
   },
@@ -53,8 +51,10 @@ const styles = theme => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '120',
-      '&:focus': 200
+      width: 120,
+      '&:focus': {
+        width: 200
+      }
     }
   }
 })
