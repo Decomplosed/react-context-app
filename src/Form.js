@@ -13,10 +13,11 @@ import Typography from '@material-ui/core/Typography'
 import MenuItem from '@material-ui/core/MenuItem'
 import Select from '@material-ui/core/Select'
 import { withStyles } from '@material-ui/core/styles/withStyles'
+import styles from './styles/FormStyles'
 
 class Form extends Component {
   render() {
-    return <div></div>
+    return <main className={classes.main}></main>
   }
 }
 
