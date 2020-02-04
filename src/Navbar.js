@@ -7,10 +7,12 @@ import InputBase from '@material-ui/core/Inputbase'
 import SearchIcon from '@material-ui/icons/Search'
 import Switch from '@material-ui/core/Switch'
 import { withStyles } from '@material-ui/core/styles'
-import classes from '*.module.css'
+import styles from './styles/NavbarStyles'
 
 class Navbar extends Component {
   render() {
+    const { classes } = this.props
+
     return (
       <div className={classes.root}>
         <AppBar position='static' color='primary'>
