@@ -40,6 +40,10 @@ class Form extends Component {
               <InputLabel htmlFor='password'>Password</InputLabel>
               <Input id='password' name='password' autoFocus />
             </FormControl>
+            <FormControlLabel
+              control={<Checkbox color='primary' />}
+              label='Remebmer Me'
+            />
           </form>
         </Paper>
       </main>
