@@ -7,4 +7,12 @@ export class LanguageProvider extends Component {
     super(props)
     this.state = { language: 'french' }
   }
+
+  render() {
+    return (
+      <LanguageContext.Provider value={{ ...this.state }}>
+        {this.props.children}
+      </LanguageContext.Provider>
+    )
+  }
 }
