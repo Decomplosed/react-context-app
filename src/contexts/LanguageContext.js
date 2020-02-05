@@ -6,6 +6,7 @@ export class LanguageProvider extends Component {
   constructor(props) {
     super(props)
     this.state = { language: 'french' }
+    this.changeLanguage = this.changeLanguage.bind(this)
   }
 
   changeLanguage(e) {
