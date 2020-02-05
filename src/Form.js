@@ -42,14 +42,14 @@ class Form extends Component {
   render() {
     const { language } = this.context
     const { classes } = this.props
-    const { email } = words[language]
+    const { email, signIn, password, remember } = words[language]
     return (
       <main className={classes.main}>
         <Paper className={classes.paper}>
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography variant='h5'>Sign In</Typography>
+          <Typography variant='h5'>{signIn}</Typography>
           <Select value='french'>
             <MenuItem value='english'>English</MenuItem>
             <MenuItem value='french'>French</MenuItem>
@@ -61,12 +61,12 @@ class Form extends Component {
               <Input id='email' name='email' autoFocus />
             </FormControl>
             <FormControl margin='normal' required fullWidth>
-              <InputLabel htmlFor='password'>Password</InputLabel>
+              <InputLabel htmlFor='password'>{password}</InputLabel>
               <Input id='password' name='password' autoFocus />
             </FormControl>
             <FormControlLabel
               control={<Checkbox color='primary' />}
-              label='Remebmer Me'
+              label={remember}
             />
             <Button
               variant='contained'
@@ -75,7 +75,7 @@ class Form extends Component {
               color='primary'
               className={classes.submit}
             >
-              Sign In
+              {signIn}
             </Button>
           </form>
         </Paper>
