@@ -15,7 +15,9 @@ export class LanguageProvider extends Component {
 
   render() {
     return (
-      <LanguageContext.Provider value={{ ...this.state }}>
+      <LanguageContext.Provider
+        value={{ ...this.state, changeLanguage: this.changeLanguage }}
+      >
         {this.props.children}
       </LanguageContext.Provider>
     )
