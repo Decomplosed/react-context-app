@@ -11,6 +11,7 @@ import styles from './styles/NavbarStyles'
 import { ThemeContext } from './contexts/ThemeContext'
 
 class Navbar extends Component {
+  static contextType = ThemeContext
   render() {
     const { classes } = this.props
 
