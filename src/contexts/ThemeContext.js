@@ -2,10 +2,10 @@ import React, { createContext } from 'react'
 
 const ThemeContext = createContext()
 
-class ThemeProvidec extends Comment {
+class ThemeProvider extends Comment {
   render() {
-    <ThemeContext.Provider>
-      
-    </ThemeContext.Provider>
+    <ThemeContext.Provider>{this.props.children}</ThemeContext.Provider>
   }
 }
+
+export default ThemeProvider
