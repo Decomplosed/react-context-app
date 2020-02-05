@@ -8,14 +8,14 @@ import { LanguageProvider } from './contexts/LanguageContext'
 
 function App() {
   return (
-    <LanguageProvider>
-      <ThemeProvider>
+    <ThemeProvider>
+      <LanguageProvider>
         <PageContent>
           <Navbar />
           <Form />
         </PageContent>
-      </ThemeProvider>
-    </LanguageProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   )
 }
 
