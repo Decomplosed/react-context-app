@@ -8,6 +8,10 @@ export class LanguageProvider extends Component {
     this.state = { language: 'french' }
   }
 
+  changeLanguage(e) {
+    this.setState({ language: e.target.value })
+  }
+
   render() {
     return (
       <LanguageContext.Provider value={{ ...this.state }}>
