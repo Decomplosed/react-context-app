@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {ThemeContext} from './contexts/ThemeContext'
 
 class PageContent extends Component {
   render() {
