@@ -8,7 +8,7 @@ class ThemeProvider extends Comment {
     this.state = {isDarkMode: true}
   }
   render() {
-    <ThemeContext.Provider>{this.props.children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{...this.state}}>{this.props.children}</ThemeContext.Provider>
   }
 }
 
