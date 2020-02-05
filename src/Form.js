@@ -40,7 +40,7 @@ const words = {
 class Form extends Component {
   static contextType = LanguageContext
   render() {
-    const { language } = this.context
+    const { language, changeLanguage } = this.context
     const { classes } = this.props
     const { email, signIn, password, remember } = words[language]
     return (
