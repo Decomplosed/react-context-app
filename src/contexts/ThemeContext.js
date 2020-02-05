@@ -1,8 +1,8 @@
-import React, { createContext } from 'react'
+import React, { Component, createContext } from 'react'
 
 export const ThemeContext = createContext()
 
-class ThemeProvider extends Comment {
+class ThemeProvider extends Component {
   constructor(props) {
     super(props)
     this.state = { isDarkMode: true }
