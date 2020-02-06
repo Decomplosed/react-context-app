@@ -65,4 +65,4 @@ class Navbar extends Component {
   }
 }
 
-export default withLanguageContext(withStyles(styles)(Navbar))
+export default withStyles(styles)(Navbar)
