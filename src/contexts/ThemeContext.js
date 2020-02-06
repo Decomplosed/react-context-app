@@ -10,7 +10,6 @@ export function ThemeProvider() {
     this.setState({ isDarkMode: !this.state.isDarkMode })
   }
 
-  render() {
     return (
       <ThemeContext.Provider
         value={{ ...this.state, toggleTheme: this.toggleTheme }}
@@ -18,5 +17,4 @@ export function ThemeProvider() {
         {this.props.children}
       </ThemeContext.Provider>
     )
-  }
 }
