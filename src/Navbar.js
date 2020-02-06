@@ -9,7 +9,7 @@ import Switch from '@material-ui/core/Switch'
 import { withStyles } from '@material-ui/core/styles'
 import styles from './styles/NavbarStyles'
 import { ThemeContext } from './contexts/ThemeContext'
-import { withLanguageContext } from './contexts/LanguageContext'
+import { LanguageContext } from './contexts/LanguageContext'
 
 const content = {
   english: {
