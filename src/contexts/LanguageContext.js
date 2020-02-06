@@ -7,16 +7,8 @@ export function LanguageProvider() {
   const changeLanguage = e => setLanguage(e.target.value)
 
   return (
-    <LanguageContext.Provider
-      value={{ ...this.state, changeLanguage: this.changeLanguage }}
-    >
+    <LanguageContext.Provider value={{ language, changeLanguage }}>
       {this.props.children}
     </LanguageContext.Provider>
   )
 }
-
-export const withLanguageContext = Component => props => (
-  <LanguageContext.Consumer>
-    {value => <Component languageContext={value} {...props} />}
-  </LanguageContext.Consumer>
-)
